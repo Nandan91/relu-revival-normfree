@@ -111,4 +111,4 @@ For any inquiries or further information, feel free to reach out to the primary 
 
 ## Acknowledgments
 
-This code is built on the [Simplified Transformers](https://github.com/simplified-transformers).
+This code is built on the [Simplified Transformers](https://github.com/bobby-he/simplified_transformers).
