@@ -55,7 +55,7 @@ The repository is organized into directories to simplify exploration and usage:
 The `normfree_transformers/` directory contains:
 
 - **Configuration files** in YAML format for easy adjustments to model and training parameters.
-- **Model utilities** (`model_utils.py`): Contains modular functions to define the normalization-free architecture.
+- **Model utilities** (`model_utils.py`): Contains modular functions to define the normalization-free architecture with desriable activation functions.
 - **Training utilities** (`train_utils.py`): Helper functions for training the model with advanced monitoring and logging.
 
 ### Experimentation
@@ -65,11 +65,11 @@ Experiment scripts for training normalization-free and baseline models are avail
 - `train_normfree.sh`: Trains our novel normalization-free transformer model.
 
 ### Analysis & Visualization
-The `scripts/plotting/` directory provides tools for analyzing entropy dynamics:
+The `scripts/plotting/` directory provides tools for analyzing entropy dynamics and training stability:
 
-- `plot_headwise_entropy_heatmap.py`: Generates visualizations of entropy across attention heads.
+- `plot_headwise_entropy_heatmap.py`: Generates entropy visualizations across attention heads in a full-trained model.
 - `plot_layerwise_entropy.py`: Performs layer-wise entropy analysis, helpful for observing entropic patterns during training.
-- `plot_layerwise_nan_counts.py`: Identifies instability by tracking NaN counts in each layer.
+- `plot_layerwise_nan_counts.py`: Identifies instability by tracking NaN counts in each layer during training.
 
   
 ## Usage 🚀
