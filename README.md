@@ -5,6 +5,7 @@ This is the official code for our [ATTRIB@NeurIPS'24](https://attrib-workshop.cc
 ## Repository Structure
 
 
+.
 ├── normfree_transformers/
 │   ├── config/
 │   │   ├── config.yaml
