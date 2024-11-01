@@ -73,7 +73,7 @@ The `scripts/plotting/` directory provides tools for analyzing entropy dynamics 
 
   
 ## Usage 🚀
-
+All models were trained and evaluated on a single NVIDIA RTX 3090 GPU with 24GB of VRAM.
 ### Training a Model
 
 To start training a normalization-free model:
@@ -91,6 +91,7 @@ bash scripts/experiments/train_baseline.sh
 ### Visualization
 
 To analyze entropic characteristics, generate entropy heatmaps or layer-wise plots using the `scripts/plotting/` tools.
+
 ## 📑 Citation
 
 If you find our work valuable for your research, please consider citing us:
