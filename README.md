@@ -60,15 +60,14 @@ To train a baseline model:
 bash scripts/experiments/train_baseline.sh
 
 ## Citation
-
-If you find this work useful, please cite our paper:
+If you find our work useful, please consider citing our paper:
+```bibtex
 @article{jha2024relusrevival,
        title={ReLU's Revival: On the Entropic Overload in Normalization-Free Large Language Models},
        author={Jha, Nandan Kumar and Reagen, Brandon},
        journal={2nd Workshop on Attributing Model Behavior at Scale (ATTRIB @ NeurIPS)},
        year={2024}
 }
-
 
 ## Contact
 
