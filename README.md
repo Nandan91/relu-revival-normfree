@@ -4,7 +4,7 @@ This is the official code for our [ATTRIB@NeurIPS'24](https://attrib-workshop.cc
 
 ## Repository Structure
 
-
+```
 .
 ├── normfree_transformers/
 │   ├── config/
@@ -26,6 +26,8 @@ This is the official code for our [ATTRIB@NeurIPS'24](https://attrib-workshop.cc
 │       └── plot_layerwise_nan_counts.py
 ├── requirements.txt
 └── run_clm.py
+```
+
 
 ## Overview
 
