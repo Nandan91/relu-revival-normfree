@@ -1,6 +1,6 @@
 # ReLU's Revival: On the Entropic Overload in Normalization-Free Large Language Models
 
-Welcome to the official repository for our paper, **"ReLU's Revival: On the Entropic Overload in Normalization-Free Large Language Models"**, presented at the [ATTRIB@NeurIPS'24](https://attrib-workshop.cc/) workshop. Our paper is available on [arXiv](https://arxiv.org/abs/2410.09637).
+Welcome to the official repository for our paper, **"ReLU's Revival: On the Entropic Overload in Normalization-Free Large Language Models"**, accepted to the [ATTRIB@NeurIPS'24](https://attrib-workshop.cc/) workshop. Our paper is available on [arXiv](https://arxiv.org/abs/2410.09637).
 
 ## 📝 Abstract
 
@@ -20,7 +20,12 @@ To get started with the repository, clone the repository and install dependencie
 git clone https://github.com/[username]/relu-revival-normfree
 cd relu-revival-normfree
 pip install -r requirements.txt
+```
+## 📂 Repository Structure
 
+The repository is organized into directories to simplify exploration and usage:
+
+```php
 .
 ├── normfree_transformers/        # Core model and utility files
 │   ├── config/                   # Configuration files for model and training
@@ -42,7 +47,7 @@ pip install -r requirements.txt
 ├── requirements.txt              # Dependencies
 └── run_clm.py                    # Main script for running LLM training
 
-
+```
 
 ## Overview
 
