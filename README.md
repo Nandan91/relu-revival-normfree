@@ -4,7 +4,7 @@ This is the official code for our [ATTRIB@NeurIPS'24](https://attrib-workshop.cc
 
 ## Repository Structure
 
-.
+
 ├── normfree_transformers/
 │   ├── config/
 │   │   ├── config.yaml
@@ -70,4 +70,4 @@ If you find this work useful, please cite our paper:
 
 ## Contact
 
-[nj2049@nyu.edu]
+nj2049@nyu.edu
