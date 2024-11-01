@@ -8,6 +8,13 @@ LayerNorm is a critical component in modern large language models (LLMs) for sta
 
 We discover a key issue with GELU, where early layers experience entropic overload, resulting in the under-utilization of the representational capacity of attention heads. This highlights that smoother activations like GELU are _ill-suited_ for LayerNorm-free architectures, whereas ReLU's geometrical properties—specialization in input space and intra-class selectivity—lead to improved learning dynamics and better information retention in the absence of LayerNorm. This study offers key insights for optimizing transformer architectures where LayerNorm introduces significant challenges.
 
+<p align="center">
+     <img src="assets/ent_hmaps.png" width="100%">
+     <br>
+     <em>Head-wise entropy distribution and evaluation loss for baseline and normalization-free GPT-2 models using GELU and ReLU activations</em>
+</p>
+
+
 ## 📚 Overview
 
 This repository contains the codebase and resources for exploring the entropic characteristics of normalization-free transformers, particularly focusing on the use of ReLU activation in large language models (LLMs). Our approach sheds light on the advantages of removing normalization layers for efficient model training and inference in transformer architectures, making this research particularly relevant for efficient private inference tasks.
