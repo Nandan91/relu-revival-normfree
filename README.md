@@ -65,7 +65,7 @@ If you find our work useful, please consider citing our paper:
 @article{jha2024relusrevival,
        title={ReLU's Revival: On the Entropic Overload in Normalization-Free Large Language Models},
        author={Jha, Nandan Kumar and Reagen, Brandon},
-       journal={2nd Workshop on Attributing Model Behavior at Scale (ATTRIB @ NeurIPS)},
+       journal={2nd Workshop on Attributing Model Behavior at Scale (NeurIPS)},
        year={2024}
 }
 ```
