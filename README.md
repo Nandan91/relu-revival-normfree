@@ -17,7 +17,7 @@ This repository contains the codebase and resources for exploring the entropic c
 To get started with the repository, clone the repository and install dependencies as follows:
 
 ```bash
-git clone https://github.com/[username]/relu-revival-normfree
+git clone https://github.com/Nandan91/relu-revival-normfree
 cd relu-revival-normfree
 pip install -r requirements.txt
 ```
