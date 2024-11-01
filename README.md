@@ -49,39 +49,52 @@ The repository is organized into directories to simplify exploration and usage:
 
 ```
 
-## Overview
+## 🔬 Project Components
 
-This repository contains the implementation of our research on normalization-free transformers and their entropic behavior. We investigate the role of ReLU activation in large language models without normalization layers.
+### Model Architecture & Configuration
+The `normfree_transformers/` directory contains:
 
-## Installation
+- **Configuration files** in YAML format for easy adjustments to model and training parameters.
+- **Model utilities** (`model_utils.py`): Contains modular functions to define the normalization-free architecture.
+- **Training utilities** (`train_utils.py`): Helper functions for training the model with advanced monitoring and logging.
 
-git clone https://github.com/[username]/relus-revival
-cd relus-revival
-pip install -r requirements.txt
+### Experimentation
+Experiment scripts for training normalization-free and baseline models are available in `scripts/experiments/`:
 
-## Project Components
-
-### Experiments
-- `scripts/experiments/`:
-  - `train_baseline.sh`: Script for training baseline models
-  - `train_normfree.sh`: Script for training normalization-free models
+- `train_baseline.sh`: Trains a standard transformer model.
+- `train_normfree.sh`: Trains our novel normalization-free transformer model.
 
 ### Analysis & Visualization
-- `scripts/plotting/`:
-  - `plot_headwise_entropy_heatmap.py`: Generates attention head entropy heatmaps for trained networks
-  - `plot_layerwise_entropy.py`: Plots layer-wise entropy analysis during pre-training phase
-  - `plot_layerwise_nan_counts.py`: Plots layer-wise  NaNs for tracking training instability 
-  
-## Usage
+The `scripts/plotting/` directory provides tools for analyzing entropy dynamics:
 
-To train a normalization-free model:
+- `plot_headwise_entropy_heatmap.py`: Generates visualizations of entropy across attention heads.
+- `plot_layerwise_entropy.py`: Performs layer-wise entropy analysis, helpful for observing entropic patterns during training.
+- `plot_layerwise_nan_counts.py`: Identifies instability by tracking NaN counts in each layer.
+
+  
+## Usage 🚀
+
+### Training a Model
+
+To start training a normalization-free model:
+
+```bash
 bash scripts/experiments/train_normfree.sh
+```
 
 To train a baseline model:
-bash scripts/experiments/train_baseline.sh
 
-## Citation
-If you find our work useful, please consider citing our paper:
+```bash
+bash scripts/experiments/train_baseline.sh
+```
+
+### Visualization
+
+To analyze entropic characteristics, generate entropy heatmaps or layer-wise plots using the `scripts/plotting/` tools.
+## 📑 Citation
+
+If you find our work valuable for your research, please consider citing us:
+
 ```bibtex
 @article{jha2024relusrevival,
        title={ReLU's Revival: On the Entropic Overload in Normalization-Free Large Language Models},
@@ -90,6 +103,12 @@ If you find our work useful, please consider citing our paper:
        year={2024}
 }
 ```
-## Contact
+## Contact 📧
 
-nj2049@nyu.edu
+For any inquiries or further information, feel free to reach out to the primary author:
+
+* Nandan Kumar Jha: [nj2049@nyu.edu](mailto:nj2049@nyu.edu)
+
+## Acknowledgments
+
+This code is built on the [Simplified Transformers](https://github.com/simplified-transformers).
