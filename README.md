@@ -13,7 +13,7 @@ This is the official code for our [ATTRIB@NeurIPS'24](https://attrib-workshop.cc
 │   │   │   └── default.yaml
 │   │   └── train/
 │   │       └── train.yaml
-│   ├── model_utils.py│   
+│   ├── model_utils.py   
 │   └── train_utils.py
 ├── scripts/
 │   ├── experiments/
