@@ -1,0 +1,37 @@
+# Model Architecture Configuration
+name: gpt2
+context_length: 128
+n_embd: 768  
+n_layer: 12  
+n_head: 12   
+
+# Normalization Configuration
+norm_type: "ln"  # Normalization type
+                 # Options:
+                 #   - "ln": Pre-LayerNorm (baseline configuration)
+                 #   - "free": Normalization-free architecture
+
+# Parameter Initialization
+initializer_range: 0.02  
+
+
+# MLP Configuration
+mlp_width_mult: 4  # Multiplier for MLP hidden dimension
+
+# Activation Function Configuration
+activation_function: "gelu"  # Type of activation function
+                                        # Options:                                        
+                                        #   - "relu": Standard ReLU
+                                        #   - "gelu": Standard GeLU
+                                        #   - "learnable_lrelu": Standard Leaky ReLU with a fixed negative slope
+
+lrelu_neg_slope: 1e-2   # Only applicable when activation_function = "leaky_relu"               
+                        # Negative slope for LeakyReLU (0 = ReLU)
+
+# Learnable LeakyReLU Configuration
+# Note: This setting is only used when activation_function = "learnable_lrelu"
+learnable_lrelu_mode: "per_layer"  # Mode for learnable LeakyReLU parameters
+                                # Options:
+                                #   - "global": Single learnable parameter shared across all layers
+                                #   - "per_layer": Separate learnable parameters for each layer
+                                

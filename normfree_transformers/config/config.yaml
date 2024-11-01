@@ -1,0 +1,11 @@
+defaults:
+  - model: default
+  - train: train
+
+gpu: 0
+seed: 1337
+report_attn_entropy: true
+report_nan_counts: true
+report_neg_slope: false
+num_token_mult: 1
+use_wandb: false
