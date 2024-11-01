@@ -11,7 +11,7 @@ We discover a key issue with GELU, where early layers experience entropic overlo
 <p align="center">
      <img src="assets/ent_hmaps.png" width="100%">
      <br>
-     <em>Attention head entropy heatmaps for baseline and normalization-free GPT-2 models using GELU and ReLU activations</em>
+     <em>Attention head entropy heatmaps for baseline and normalization-free GPT-2 models with GELU and ReLU activations, highlighting entropic overload in early layers of GELU-based normalization-free model.</em>
 </p>
 
 
