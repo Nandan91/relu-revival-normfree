@@ -80,7 +80,7 @@ The `scripts/plotting/` directory provides tools for analyzing entropy dynamics 
 
   
 ## Usage 🚀
-All models were trained and evaluated on a single NVIDIA RTX 3090 GPU with 24GB of VRAM.
+All models were trained and evaluated on [CodeParrot dataset](https://huggingface.co/learn/nlp-course/chapter7/6) (2.1B training tokens) using a single NVIDIA RTX 3090 GPU (24GB VRAM).
 ### Training a Model
 
 To start training a normalization-free model:
