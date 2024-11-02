@@ -104,7 +104,7 @@ bash scripts/experiments/train_baseline.sh
 | SM+G | 3.197 | 18.92 | 4.086 | 16.35 | 3.570 | 16.87 |
 | SM+R | 2.936 | 9.20 | 3.736 | 6.36 | 3.273 | 7.17 |
 
-*Table: Evaluation Perplexity (PPL) and Relative Change (+Δ%) for GPT-2 and Pythia-70M models across different configurations.*
+*Evaluation Perplexity (PPL) and Relative Change (+Δ%) for GPT-2 and Pythia-70M models across different configurations.*
 
 
 ### Visualization
