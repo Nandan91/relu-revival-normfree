@@ -97,7 +97,7 @@ bash scripts/experiments/train_baseline.sh
 ### Perplexity Evaluation for GPT-2 and Pythia-70M Models
 
 | Model | GPT-2 (T=128) | | Pythia-70M (T=128) | | Pythia-70M (T=256) | |
-|:--|--:|--:|--:|--:|--:|--:|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | | Eval PPL | +Δ(%) | Eval PPL | +Δ(%) | Eval PPL | +Δ(%) |
 | SM+LN+G | 2.688 | 0.00 | 3.512 | 0.00 | 3.054 | 0.00 |
 | SM+LN+R | 2.757 | 2.53 | 3.590 | 2.22 | 3.107 | 1.73 |
