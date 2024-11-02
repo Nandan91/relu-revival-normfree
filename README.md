@@ -94,7 +94,8 @@ To train a baseline model:
 ```bash
 bash scripts/experiments/train_baseline.sh
 ```
-### Perplexity Evaluation for GPT-2 and Pythia-70M Models
+### Perplexity Evaluation 
+> The baseline GPT-2 ($L$=12, $H$=12, $d$=768) with GELU and ReLU activations converge to evaluation loss of ≈`0.988` and ≈`1.014` respectively, after 32K training steps (device batch size = 128).
 
 | Model | GPT-2 (T=128) | | Pythia-70M (T=128) | | Pythia-70M (T=256) | |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -104,7 +105,7 @@ bash scripts/experiments/train_baseline.sh
 | SM+G | 3.197 | 18.92 | 4.086 | 16.35 | 3.570 | 16.87 |
 | SM+R | 2.936 | 9.20 | 3.736 | 6.36 | 3.273 | 7.17 |
 
-*Evaluation Perplexity (PPL) and Relative Change (+Δ%) for GPT-2 and Pythia-70M models across different configurations.*
+*Evaluation Perplexity (PPL) and Relative Change (+Δ%) for GPT-2 and Pythia-70M models across different configurations. Normalization-free model with ReLU activations outperform their GELU counterpart.*
 
 
 ### Visualization
